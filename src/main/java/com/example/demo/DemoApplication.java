@@ -18,7 +18,7 @@ public class DemoApplication {
                 Thread.sleep(1000);
                 Runtime.getRuntime().exec("open http://localhost:8080/record.html");
             } catch (Exception e) {
-                System.err.println("❌ 無法自動開啟瀏覽器：" + e.getMessage());
+                System.err.println("無法自動開啟瀏覽器：" + e.getMessage());
             }
         }).start();
     }

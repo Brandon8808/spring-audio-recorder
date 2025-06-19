@@ -28,9 +28,9 @@ public class AudioUploadController {
             String filePath = UPLOAD_DIR + file.getOriginalFilename();
             file.transferTo(new File(filePath));
 
-            return ResponseEntity.ok("✅ 儲存成功：" + file.getOriginalFilename());
+            return ResponseEntity.ok("儲存成功：" + file.getOriginalFilename());
         } catch (IOException e) {
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("❌ 儲存失敗：" + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("儲存失敗：" + e.getMessage());
         }
     }
 
