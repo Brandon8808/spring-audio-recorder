@@ -1,13 +1,37 @@
-# Java & Maven
-/target
-*.class
+# Java 編譯產物
+/out/
+/target/
+/*.class
 
-# IntelliJ
+# IDE 設定檔
 .idea/
 *.iml
+*.ipr
+*.iws
 
-# OS
+# 系統檔
 .DS_Store
+Thumbs.db
 
-# Uploaded audio
-/uploads/
+# 日誌檔與暫存檔
+*.log
+*.tmp
+
+# 上傳的錄音檔，只保留資料夾結構
+uploads/*
+!uploads/.gitkeep
+
+# 測試報告
+/test-output/
+/surefire-reports/
+
+# Maven / Gradle 檔案（依實際情況選擇）
+.mvn/
+.settings/
+build/
+
+# node_modules（如果你有整合前端）
+node_modules/
+
+# 環境變數
+.env
